@@ -9,7 +9,6 @@ FROM financial_risk_table;
 # Business Questions:
 -- What is the total Loan Amount, Average, Max?
 
-#SQL Query
 -- Total Loan Amount:
 SELECT SUM(`Loan Amount`) AS Total_Loan_Anount
 FROM financial_risk_table;
@@ -29,13 +28,13 @@ FROM financial_risk_table;
 
 -- What is the total credit score?
 
-#SQL Query
+
 SELECT SUM(`Credit Score`) AS Total_Credit_Score
 FROM financial_risk_table;
 
 -- How many people are employed and unemployed?
 
-#SQL Query
+
 -- No. of People Employed:
 SELECT COUNT(`Employment Status`) AS Employed
 FROM financial_risk_table
@@ -74,7 +73,7 @@ ORDER BY TotalLoan DESC;
 # Business Question:
 -- Are there Average Loan Amount For Education Level?
 
-# SQL QUERY:
+
 SELECT  `Education Level`, AVG(`Loan Amount`) AS Average_Loan_Amount
 FROM financial_risk_table
 GROUP BY `Education Level`
@@ -91,7 +90,7 @@ ORDER BY Average_Loan_Amount DESC;
 # Business Question:
 --  What is the top 6 Education Level by age and their Max Loan Amount?:
 
-# SQL QUERY:
+
 SELECT  `Education Level`, MAX(`Loan Amount`) AS Max_Loan_Amount
 FROM financial_risk_table
 GROUP BY `Education Level`
@@ -107,7 +106,7 @@ LIMIT 6;
 # Business Question:
 -- Which Marital Status has Highest Credit Score?
 
-# SQL QUERY:
+
 SELECT (`Marital Status`), SUM(`Credit Score`) AS TotalCreditScore
 FROM financial_risk_table
 GROUP BY `Marital Status`;
@@ -121,7 +120,6 @@ GROUP BY `Marital Status`;
 # Business Question:
 -- Are there relationships between employment status, payment history, and risk rating?
 
-# SQL Query:
 
 SELECT `Employment Status`, COUNT(`Risk Rating`) AS HighRisk
 FROM financial_risk_table
