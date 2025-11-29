@@ -1,4 +1,4 @@
-# Financial-Risk-Assessment-Analysis
+# Financial Risk Assessment Insights 
 
 ## Problem Statement
 Financial institutions need a clear understanding of how loan risks vary across demographic segments such as employment status, education level, credit scores, and loan purpose. Without proper insights, lenders may approve risky loans, misjudge borrower capability, or overlook opportunities for safer lending. This dashboard helps identify high-risk groups, predict default tendencies, and improve lending decisions.
